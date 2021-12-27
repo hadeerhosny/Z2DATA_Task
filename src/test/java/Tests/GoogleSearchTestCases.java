@@ -28,7 +28,7 @@ public class GoogleSearchTestCases extends TestBase{
 		for(int i=1;i<myElements.size();i++) {
 			
 			
-			if (i==4) {
+			if (i==3) {
 				
 					driver.findElement(By.xpath("//div[@class='v7W49e']/div"+"["+i+"]"+"/div/div/div/a")).click();
 					break;
