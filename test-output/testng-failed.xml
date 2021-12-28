@@ -7,6 +7,7 @@
         <methods>
           <include name="intitiateTestCases"/>
           <include name="googleSearchTest_01"/>
+          <include name="finalizeTest"/>
         </methods>
       </class> <!-- Tests.GoogleSearchTestCases -->
     </classes>

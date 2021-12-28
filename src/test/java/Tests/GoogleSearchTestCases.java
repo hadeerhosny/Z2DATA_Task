@@ -1,5 +1,7 @@
 package Tests;
 
+import static org.testng.Assert.assertTrue;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -36,6 +38,9 @@ public class GoogleSearchTestCases extends TestBase{
 			}
 		
 	}
+		
+		Boolean headertext=driver.findElement(By.xpath("//*[@id=\"post-40\"]/div/header/h1")).getText().contains("TestNG Tutorial");
+		assertTrue(headertext);
 		
 		File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);            
 	    File destination = new File(System.getProperty("user.dir")+ 
